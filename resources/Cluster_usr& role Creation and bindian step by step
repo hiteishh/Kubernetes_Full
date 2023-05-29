@@ -3,7 +3,7 @@ K9s CLuster role binding step by step
 #Need to generet key with below command
 openssl genrsa -out test.key 2048
 
-##Certificate sign key request for user
+##Certificate sign key request for user//// 0=dev dev is group where we can adduser to handle
 sudo openssl req -new -key test.key -out test.key -out kumuda.csr -subj "/CN=kumuda/O=dev/O=example.com"
 
 
